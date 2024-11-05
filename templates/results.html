@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Analysis Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Analysis Results</h1>
+        <div>
+            <h2>Age Distribution</h2>
+            <img src="{{ url_for('static', filename=charts['age_distribution']) }}" alt="Age Distribution">
+        </div>
+        <div>
+            <h2>Rating Distribution</h2>
+            <img src="{{ url_for('static', filename=charts['rating_distribution']) }}" alt="Rating Distribution">
+        </div>
+        <div>
+            <h2>Top 10 Most Rated Books</h2>
+            <img src="{{ url_for('static', filename=charts['top_rated_books']) }}" alt="Top 10 Most Rated Books">
+        </div>
+        <div>
+            <h2>Top 10 Books by Average Rating</h2>
+            <img src="{{ url_for('static', filename=charts['top_avg_rated_books']) }}" alt="Top 10 Books by Average Rating">
+        </div>
+    </div>
+</body>
+</html>

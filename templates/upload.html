@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Upload Files</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Files for Analysis</h1>
+        <form method="post" enctype="multipart/form-data">
+            <label for="users_file">Users File:</label>
+            <input type="file" id="users_file" name="users_file" required><br><br>
+            <label for="books_file">Books File:</label>
+            <input type="file" id="books_file" name="books_file" required><br><br>
+            <label for="ratings_file">Ratings File:</label>
+            <input type="file" id="ratings_file" name="ratings_file" required><br><br>
+            <input type="submit" value="Upload and Analyze">
+        </form>
+    </div>
+</body>
+</html>
